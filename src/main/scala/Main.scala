@@ -3,6 +3,7 @@ import scala.io.Source
 val day1File = "./inputs/day1.txt"
 val day2File = "./inputs/day2.txt"
 val day3File = "./inputs/day3.txt"
+val day4File = "./inputs/day4.txt"
 
 @main def day1: Unit = 
   var inputs = Source.fromFile(day1File).getLines.toList
@@ -31,3 +32,9 @@ val day3File = "./inputs/day3.txt"
   
   println("part 1 total score will be: " + solveDay3Part1(inputs))
   println("part 2 total score will be: " + solveDay3Part2(inputs))
+
+@main def day4: Unit = 
+  var inputs = Source.fromFile(day4File).getLines.toList
+  
+  println("part 1 total score will be: " + solveDay4Part1(inputs))
+  println("part 2 total score will be: " + solveDay4Part2(inputs))
