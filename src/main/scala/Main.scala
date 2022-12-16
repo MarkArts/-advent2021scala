@@ -1,6 +1,7 @@
 import scala.io.Source
 
 val day1File = "./inputs/day1.txt"
+val day2File = "./inputs/day2.txt"
 
 @main def day1: Unit = 
   var inputs = Source.fromFile(day1File).getLines.toList
@@ -17,3 +18,9 @@ val day1File = "./inputs/day1.txt"
     .reduce(_+_)
   
   println("callories of top 3 elves: " + calloriesOfTopThreeElves)
+
+@main def day2: Unit = 
+  var inputs = Source.fromFile(day2File).getLines.toList
+  
+  println("part 1 total score will be: " + solveDay2Part1(inputs))
+  println("part 2 total score will be: " + solveDay2Part2(inputs))
